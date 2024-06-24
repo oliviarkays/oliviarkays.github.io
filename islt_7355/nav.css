@@ -50,6 +50,7 @@ nav ul li:hover ul {
 nav ul li ul li {
     width: 180px;
     border-radius: 4px;
+    text-align: center
 }
 
 nav ul li ul li a {
@@ -58,25 +59,4 @@ nav ul li ul li a {
 
 nav ul li ul li a:hover {
     color: #ffe09e
-}
-
-nav li{
-    border: none;
-    width: 150px;
-    padding: 20px 20px 20px 20px;
-    margin-top: 10px;
-    margin-left: 10px;
-    text-align: center;
-    color: #ffffff;
-}
-
-nav a{
-    text-decoration: none;
-    text-align: center;
-    padding: 10px;
-    color: #ffffff;
-}
-
-nav a:hover{
-    color: #ffe09e;
 }
