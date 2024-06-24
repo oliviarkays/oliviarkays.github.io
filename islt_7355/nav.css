@@ -13,9 +13,11 @@ nav {
 /* Settings for page name in navigation bar */
 nav p {
     color: #ffffff;
-    font-size: 24px;
+    font-size: 22px;
     float: left;
-    padding: 0px 0px 0px 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding-left: 10px;
 }
 
 /* Settings for outermost unordered list in navigation bar */
