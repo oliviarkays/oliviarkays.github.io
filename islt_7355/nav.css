@@ -36,14 +36,20 @@ nav ul li a {
 }
 
 nav ul li ul {
-    display: block;
+    display: none;
     position: absolute;
     background-color: #669DA3;
     padding: 5px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+nav ul li: hover ul {
+    display: block;
 }
 
 nav ul li ul li {
     width: 180px;
+    border-radius: 4px;
 }
 
 nav ul li ul li a {
