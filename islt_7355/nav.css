@@ -13,6 +13,7 @@ nav p {
     color: #ffffff;
     font-size: 24px;
     float: left;
+    padding: 0px 0px 0px 10px;
 }
 
 nav ul {
@@ -29,7 +30,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #ffe09e;
     font-size: 14px;
     padding: 22px 14px;
     text-decoration: none;
@@ -57,5 +58,5 @@ nav ul li ul li a {
 }
 
 nav ul li ul li a:hover {
-    color: #ffe09e
+    color: #ffe09e;
 }
