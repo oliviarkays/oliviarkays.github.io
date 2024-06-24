@@ -22,6 +22,7 @@ nav ul {
     flex-direction: row;
     list-style-type: none;
     justify-content: flex-end;
+    padding: 15px 15px 15px 15px;
 }
 
 nav ul li {
@@ -48,9 +49,8 @@ nav ul li:hover ul {
 }
 
 nav ul li ul li {
-    width: 180px;
     border-radius: 4px;
-    text-align: center
+    text-align: center;
 }
 
 nav ul li ul li a {
