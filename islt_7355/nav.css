@@ -33,12 +33,17 @@ nav ul li {
     padding: 15 px;
 }
 
-<!-- Hover highlight for tier 1 list links -->
+<!-- Settings for tier 1 list links -->
 nav ul li a {
-    color: #ffe09e;
+    color: #ffffff;
     font-size: 14px;
     padding: 22px 14px;
     text-decoration: none;
+}
+
+<!-- Hover highlight for tier 1 list links -->
+nav ul li a:hover {
+    color: #ffe09e;
 }
 
 <!-- Settings for nested unordere list in navigation bar -->
