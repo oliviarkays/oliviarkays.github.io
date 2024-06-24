@@ -5,6 +5,8 @@ li{
     margin-top: 10px;
     margin-left: 10px;
     text-align: center;
+    background: #669DA3;
+    color: #ffffff;
 }
 
 ul {
@@ -18,8 +20,9 @@ a{
     text-decoration: none;
     text-align: center;
     padding: 10px;
+    color: #ffffff;
 }
 
 a:hover{
-    color: #ffffff;
+    color: #ffe09e;
 }
