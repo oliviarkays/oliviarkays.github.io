@@ -35,7 +35,26 @@ nav ul li a {
     text-decoration: none;
 }
 
-li{
+nav ul li ul {
+    display: block;
+    position: absolute;
+    background-color: #669DA3;
+    padding: 5px;
+}
+
+nav ul li ul li {
+    width: 180px;
+}
+
+nav ul li ul li a {
+    padding: 8px 14px;
+}
+
+nav ul li ul li a:hover {
+    color: #ffe09e
+}
+
+nav li{
     border: none;
     width: 150px;
     padding: 20px 20px 20px 20px;
@@ -45,13 +64,13 @@ li{
     color: #ffffff;
 }
 
-a{
+nav a{
     text-decoration: none;
     text-align: center;
     padding: 10px;
     color: #ffffff;
 }
 
-a:hover{
+nav a:hover{
     color: #ffe09e;
 }
