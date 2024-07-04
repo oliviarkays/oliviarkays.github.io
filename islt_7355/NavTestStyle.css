@@ -4,113 +4,56 @@ html, body {
     margin: 0;
 }
 
-/* Settings for navigation bar background */
 nav {
-    width: 100%;
-    height: 60px;
-    background-color: #669DA3;
+    border-bottom: 1px solid #EAEAEB;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
 }
 
-/* Settings for page name in navigation bar */
-nav p {
-    color: #ffffff;
-    font-size: 22px;
-    float: left;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    padding-left: 10px;
+.menu {
+    margin 0 30px 0 0;
 }
 
-/* Settings for outermost unordered list in navigation bar */
-nav .menu ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    justify-content: flex-end;
-    padding: 20px 15px 15px 15px;
-}
-
-/* Settings for tier 1 list items */
-nav .menu ul li {
-    list-style-type: none;
-    padding: 15 px;
-}
-
-/* Settings for tier 1 list links */
-nav .menu ul li a {
-    color: #ffffff;
-    font-size: 14px;
-    padding: 22px 14px;
+.menu a {
     text-decoration: none;
+    color: gray;
+    margin: 0 10px;
+    line-height: 70px;
 }
 
-/* Hover highlight for tier 1 list links */
-nav .menu ul li a:hover {
-    color: #ffe09e;
-}
-
-/* Settings for nested unordered list in navigation bar */
-nav .menu ul li ul {
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
     display: none;
-    position: absolute;
-    background-color: #669DA3;
-    padding: 5px;
-    border-radius: 0px 0px 4px 4px;
+    width: 26px;
+    float: right;
 }
 
-/* Settings for nested unordered list to display on hover */
-nav .menu ul li:hover ul {
-    display: block;
+#toggle {
+    display: none;
 }
 
-/* Settings for 2nd tier list */
-nav .menu ul li ul li {
-    border-radius: 4px;
-    text-align: center;
-}
+@media only screen and (max-width: 500px) {
+    label {
+        display: block;
+    }
 
-/* Settings for 2nd tier list links */
-nav .menu ul li ul li a {
-    padding: 8px 14px;
-}
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+        clear: right;
+    }
 
-/* Hover highlight for 2nd tier list links */
-nav .menu ul li ul li a:hover {
-    color: #ffe09e;
-}
-
-@media only screen and (max-width: 640px) {
-	
-	nav .menu ul, nav:active ul {
-		display: none;
-		position: absolute;
-		padding: 20px 20px 20px 0px;
-		top: 20px;
-			}
-	nav .menu:hover ul {
-		display: block;
-	}
-    	nav .menu:hover #mobileHide {
-		display: none;
-	}
-	nav .menu li {
-		text-align: center;
-		padding: 0;
-		margin: 0;
-	}
-    nav .menu>ul li {
-    text-align: left;
-    font-weight: bold;
-    float: left;
-}
-nav .menu a {
-    text-decoration: none;
-    display: inline-block;
-    border-top: none;
-    border-bottom: none;
-    padding: 15px 0px 15px 35px;
-    width: 240px;
-    margin-bottom: 2px;
-    background-color: #669DA3;
-}
+    #toggle:checked + .menu {
+        display: block;
+    }
 }
