@@ -1,5 +1,7 @@
-#hamburger {
-    display: none;
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
 }
 
 /* Settings for navigation bar background */
@@ -20,7 +22,7 @@ nav p {
 }
 
 /* Settings for outermost unordered list in navigation bar */
-nav ul {
+nav .menu ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
@@ -29,26 +31,26 @@ nav ul {
 }
 
 /* Settings for tier 1 list items */
-nav ul li {
+nav .menu ul li {
     list-style-type: none;
-    padding: 20 px;
+    padding: 15 px;
 }
 
 /* Settings for tier 1 list links */
-nav ul li a {
+nav .menu ul li a {
     color: #ffffff;
     font-size: 14px;
-    padding: 24px 22px;
+    padding: 22px 14px;
     text-decoration: none;
 }
 
 /* Hover highlight for tier 1 list links */
-nav ul li a:hover {
+nav .menu ul li a:hover {
     color: #ffe09e;
 }
 
 /* Settings for nested unordered list in navigation bar */
-nav ul li ul {
+nav .menu ul li ul {
     display: none;
     position: absolute;
     background-color: #669DA3;
@@ -57,60 +59,51 @@ nav ul li ul {
 }
 
 /* Settings for nested unordered list to display on hover */
-nav ul li:hover ul {
+nav .menu ul li:hover ul {
     display: block;
 }
 
 /* Settings for 2nd tier list */
-nav ul li ul li {
+nav .menu ul li ul li {
     border-radius: 4px;
     text-align: center;
 }
 
 /* Settings for 2nd tier list links */
-nav ul li ul li a {
+nav .menu ul li ul li a {
     padding: 8px 14px;
 }
 
 /* Hover highlight for 2nd tier list links */
-nav ul li ul li a:hover {
+nav .menu ul li ul li a:hover {
     color: #ffe09e;
 }
 
 @media only screen and (max-width: 640px) {
-	#hamburger {
-		display: block;
-        padding-left: 20px;
-        padding-right: 20px;
-        width: 26px;
-        float: right;
-        font-size: 2em;
-        background-color: #669DA3;
-        color: white;
-	}
-	nav ul, nav:active ul {
+	
+	nav .menu ul, nav:active ul {
 		display: none;
 		position: absolute;
 		padding: 20px 20px 20px 0px;
 		top: 20px;
 			}
-	nav:hover ul {
+	nav .menu:hover ul {
 		display: block;
 	}
-    	nav:hover #mobileHide {
+    	nav .menu:hover #mobileHide {
 		display: none;
 	}
-	nav li {
+	nav .menu li {
 		text-align: center;
 		padding: 0;
 		margin: 0;
 	}
-    nav>ul li {
+    nav .menu>ul li {
     text-align: left;
     font-weight: bold;
     float: left;
 }
-nav a {
+nav .menu a {
     text-decoration: none;
     display: inline-block;
     border-top: none;

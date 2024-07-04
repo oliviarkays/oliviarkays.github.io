@@ -1,0 +1,82 @@
+h1 { color: #516769;}
+h2 { color: #FFA39E; font-size: 32pt; margin-top: 10px; margin-bottom: 3px;}
+h3 { color: #516769;}
+p { color: #516769;}
+blockquote { color: #516769;}
+
+body{
+    margin: 5px;
+}
+
+
+.a{
+    grid-column: col 1 / span 4;
+	grid-row: row 1;
+	display: grid;
+    grid-gap: 10px;
+    text-align: center;
+}
+
+.b{
+    grid-column: col 2 / 3;
+	grid-row: row 1;
+	display: grid;
+    grid-gap: 10px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/*Outer container for section 3 of Home page*/
+.c{
+    grid-column: col 1 / span 4;
+	grid-row: row 1;
+	display: grid;
+    grid-gap: 10px;
+	grid-template-columns: 1fr 1fr;
+}
+
+/*Center all paragraphs within outer container for section 3*/
+.c p{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/*Left upper box for section 1 of About page*/
+.d{
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+}
+
+/*Right upper box of Home page*/
+.e{
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+}
+
+/*Left lower box of Home page*/
+.f{
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+}
+
+/*Right lower box of Home page*/
+.g{
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+}
+
+@media only screen and (max-width: 640px) {
+    h1 { color: #516769; font-size: 22pt;}
+    h2 { color: #FFA39E; font-size: 20pt; margin-top: 10px; margin-bottom: 3px;}
+    h3 { color: #516769; font-size: 14pt;}
+    p { color: #516769; font-size: 12pt;}
+}

@@ -2,12 +2,12 @@
 <html lang="en-US">
 <head>
                <meta charset="utf-8">
-               <title>Project</title>
-               <link rel="stylesheet" href="style.css">
+               <title>Project 1</title>
+               <link rel="stylesheet" href="project1style.css">
                <link rel="stylesheet" href="nav.css">
 </head>
 
-<!--This is the Project template page of my MLIS portfolio-->
+<!--This is the Project 1 page of my MLIS portfolio-->
 
 <body>
     <header>
@@ -16,11 +16,12 @@
 
    <nav>
     <p>Project</p>
+    <label id="hamburger">&#9776;</label>
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href=#project.html>Projects</a>
-            <ul>
+            <ul id="mobileHide">
                 <li><a href="project.html">Project 1</a></li>
                 <li><a href=#project2.html>Project 2</a></li>
                 <li><a href=#project3.html>Project 3</a></li>
@@ -28,11 +29,63 @@
             </ul>
         <li><a href="reflection.html">Personal Reflection</a></li>
         <li><a href=#contact.html>Contact</a></li>
-        </li>
     </ul>
    </nav>
 
    <main>
+
+    <!--Section 1 of Project page-->
+    <div class="box a">
+        <!--Left aligned section within section 1-->
+        <div class="box b">
+        <h2>PROJECT 1</h2>
+        <h3 style="margin: 5px">INFO LIT QUESTIONS ASSESSMENT</h3>
+        <p>
+            COMPETENCY: Assessment of community needs, instruction of users in using informational resources.
+        </p>
+        </div>
+        <!--Right aligned section within section 1-->
+        <div class="box c">
+            <img src="Project1.jpg" alt="Report cover and results page" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+            <!--Project images centered using inline CSS-->
+        </div>
+        </div>
+    
+        <!--Section 2 of Project page-->
+        <div class="box d">
+        <h3 style="font-size: 20px;">
+            Description
+        </h3>
+    
+        <p>
+            I completed a work project in which I assessed student questions from our information literacy classes. We teach information literacy to three types of 
+            general education classes: English 110, English 225, and Communication Studies 110. Prior to the start of each English 110 class we ask students to write 
+            down one question they have about the library. In the Fall 2023 semester we tried having students submit questions before class in one of two ways. They 
+            could either submit a question online following the completion of the pre-class module, or in person immediately before the class began. I compiled all of 
+            the questions asked in that semester (both online and in person) and analyzed them for common questions, themes/patterns, and whether the questions were 
+            answered in our lesson plan.
+            <br/>
+            I found the following:
+        </p>
+            <ul>
+                <li>57% of the questions asked were not answered in our lesson plan</li>
+                <li>The majority of questions were about checking out books</li>
+                <li>Online questions were substantial more often than in person questions. In person questions were often irrelevant personal questions for the librarian</li>
+            </ul>
+            This resulted in updates to our lesson plan and online module. I updated both in order to include information on locating and checking out books, along with 
+            other items that were common questions that had previously been unanswered.
+
+        </div>
+    
+        <!--Section 3 of Project page-->
+        <div class="box e">
+            <h3>Reflection</h3>
+            <p>I was able to form a professional looking report that suited the needs for improving our lesson plan, but required some feedback on phrasing to improve 
+                the clarity when breaking down the findings, particularly when it came to conveying information about subgroups (a percentage of a percentage). I have 
+                now had some training in using Voyant, a free text data mining tool, and would likely utilize that alongside my own coding in the future. If I were to 
+                conduct an assessment like this for external use or publication, I would have obtained more assistance from others in the department in calibrating the 
+                coding system as well.</p>
+        </div>
     
    </main>
 

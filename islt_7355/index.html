@@ -3,7 +3,7 @@
 <head>
                <meta charset="utf-8">
                <title>Home</title>
-               <link rel="stylesheet" href="style.css">
+               <link rel="stylesheet" href="indexstyle.css">
                <link rel="stylesheet" href="nav.css">
 </head>
 
@@ -17,11 +17,12 @@
 
    <nav>
     <p>Home</p>
+    <label id="hamburger">&#9776;</label>
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href=#project.html>Projects</a>
-            <ul>
+            <ul id="mobileHide">
                 <li><a href="project.html">Project 1</a></li>
                 <li><a href=#project2.html>Project 2</a></li>
                 <li><a href=#project3.html>Project 3</a></li>
@@ -29,26 +30,53 @@
             </ul>
         <li><a href="reflection.html">Personal Reflection</a></li>
         <li><a href=#contact.html>Contact</a></li>
-        </li>
     </ul>
    </nav>
 
    <main>
-    <h2>Welcome to my Master’s in Library & Information Science portfolio site!</h2>
 
+    <!--Section 1 of Home page-->
+    <div class="box a">
+    <h2>WELCOME</h2>
+    <h3 style="margin: 5px">TO MY MASTER'S IN LIBRARY & INFORMATION SCIENCE PORTFOLIO PAGE</h3>
+    </div>
+
+    <!--Section 2 of Homepage-->
+    <div class="box b">
     <p>
-        The purpose of this website is to serve as an ePortfolio to showcase projects I have completed during the course of my MLIS. The projects highlighted on this site demonstrate my mastery of the following learning objectives of the Library and Information Science Master’s Program:
-        <br />
-        Application of the core principles, ethics, values, and body of knowledge to questions in library and information science, according to area of specialty.
-        <br />
-        Application of management principles and interdisciplinary best practices in library and information agency environments.
-        <br />
-        Competency in information organization and with understanding and evaluating information and communication technologies relevant to the information professions.
-        <br />
-        Assessment of community needs, formulation of plans to respond to users of information agencies, and instruction of users in using informational resources.
-        <br />
-        These projects were completed either for a class in my Master’s program or in the course of my work as an Academic Library Fellow at the University of Missouri - Kansas City Library.
+        The purpose of this website is to serve as an ePortfolio to showcase educational and professional projects I have completed during the course of my MLIS. The projects highlighted on this site demonstrate my mastery of the following learning objectives of the Library and Information Science Master’s Program:
     </p>
+    </div>
+
+    <!--Section 3. Outer container for circles-->
+    <div class="box c">
+
+        <!--Placeholder for top left circle-->
+        <div class="box d">
+            <h3>OJBECTIVE 1</h3>
+            <p>Application of the core principles, ethics, values, and body of knowledge to questions in library and information science, according to area of specialty.</p>
+        </div>
+
+        <!--Placeholder for top right circle-->
+        <div class="box e">
+            <h3>OJBECTIVE 2</h3>
+            <p>Application of management principles and interdisciplinary best practices in library and information agency environments.</p>
+        </div>
+
+        <!--Placeholder for bottom left circle-->
+        <div class="box f">
+            <h3>OJBECTIVE 3</h3>
+            <p> Competency in information organization and with understanding and evaluating information and communication technologies relevant to the information professions.</p>
+        </div>
+
+        <!--Placeholder for bottom right circle-->
+        <div class="box g">
+            <h3>OJBECTIVE 4</h3>
+            <p>Assessment of community needs, formulation of plans to respond to users of information agencies, and instruction of users in using informational resources.</p>
+        </div>
+
+    </div>
+
    </main>
 
    <footer>
