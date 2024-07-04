@@ -10,23 +10,29 @@ body{
 
 /*Outer box for section 1 of About page*/
 .a{
-    grid-column: col 1 / span 4;
-	grid-row: row 1;
+    grid-column: col 1 / span 2;
+	grid-row: row 1 / span 2;
 	display: grid;
     grid-gap: 10px;
 	grid-template-columns: 2fr 1fr;
+    grid-template-rows: 3fr 1fr;
 }
 
 /*Left inner box for section 1 of About page*/
 .b{
     grid-column: 1;
-    grid-row: 1 / 2;
+    grid-row: 1 / span 2;
 }
 
 /*Right inner box for section 1 of About page*/
 .c{
     grid-column: 2;
     grid-row: 1;
+}
+
+.cb {
+    grid-column: 2;
+    grid-row: 2;
 }
 
 /*Section 2 of About page*/
