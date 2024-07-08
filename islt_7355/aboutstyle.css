@@ -14,15 +14,15 @@
         
 }
 
+body {
+    margin: 0;
+}
+
 h1 { color: #516769; font-family: Alike;}
 h2 { color: #FFA39E; font-size: 32pt; margin-top: 10px; margin-bottom: 3px; font-family: Montserrat;}
 h3 { color: #516769; font-family: Montserrat;}
 p { color: #516769;font-family: Alike;}
 blockquote { color: #516769; font-family: Alike;}
-
-body{
-    margin: 5px;
-}
 
 /*Outer box for section 1 of About page*/
 .a{
@@ -55,6 +55,19 @@ body{
 .d{
     background-color: #BFD5D7;
     color: #516769;
+}
+
+footer {
+    background-image: url(FooterBG.png);
+    margin-bottom: 0;
+}
+
+footer p {
+    color: #ffffff;
+}
+
+footer a {
+    color: #ffffff;
 }
 
 @media only screen and (max-width: 640px) {
@@ -140,7 +153,6 @@ body{
 }
 
 footer {
-    font-size: 10pt;
     position: absolute;
     bottom: 0;
 }
