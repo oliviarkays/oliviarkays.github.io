@@ -1,1 +1,21 @@
-h1 { color: #516769;}
+@font-face { 
+
+    font-family: Alike; /*this is where we give our font a name so we can use it!*/
+    
+    src: url("Alike/Alike-Regular.ttf");
+    
+}
+
+@font-face { 
+
+     font-family: Montserrat; /*this is where we give our font a name so we can use it!*/
+        
+     src: url("Montserrat/Montserrat-VariableFont_wght.ttf");
+        
+}
+
+h1 { color: #516769; font-family: Alike;}
+h2 { color: #FFA39E; font-size: 32pt; margin-top: 10px; margin-bottom: 3px; font-family: Montserrat;}
+h3 { color: #516769; font-family: Montserrat;}
+p { color: #516769;font-family: Alike;}
+blockquote { color: #516769; font-family: Alike;}

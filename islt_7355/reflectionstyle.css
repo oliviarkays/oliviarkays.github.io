@@ -1,7 +1,23 @@
-h1 { color: #516769;}
-h2 { color: #FFA39E; font-size: 32pt; margin-top: 10px; margin-bottom: 3px;}
-h3 { color: #516769;}
-p { color: #516769;}
+@font-face { 
+
+    font-family: Alike; /*this is where we give our font a name so we can use it!*/
+    
+    src: url("Alike/Alike-Regular.ttf");
+    
+}
+
+@font-face { 
+
+     font-family: Montserrat; /*this is where we give our font a name so we can use it!*/
+        
+     src: url("Montserrat/Montserrat-VariableFont_wght.ttf");
+        
+}
+
+h1 { color: #516769; font-family: Alike;}
+h2 { color: #FFA39E; font-size: 32pt; margin-top: 10px; margin-bottom: 3px; font-family: Montserrat;}
+h3 { color: #516769; font-family: Montserrat;}
+p { color: #516769;font-family: Alike;}
 
 body{
     margin: 5px;
@@ -57,10 +73,10 @@ body{
 
 @media only screen and (max-width: 640px) {
     /*Resize text*/
-    h1 { color: #516769; font-size: 22pt;}
-    h2 { color: #FFA39E; font-size: 20pt; margin-top: 10px; margin-bottom: 3px;}
-    h3 { color: #516769; font-size: 14pt;}
-    p { color: #516769; font-size: 12pt;}
+    h1 { color: #516769; font-size: 22pt; font-family: Alike;}
+    h2 { color: #FFA39E; font-size: 20pt; margin-top: 10px; margin-bottom: 3px; font-family: Montserrat;}
+    h3 { color: #516769; font-size: 14pt; font-family: Montserrat;}
+    p { color: #516769; font-size: 12pt; font-family: Alike;}
 
     /*Outer box for sections 2 & 4 of Reflection page*/
     .d{
