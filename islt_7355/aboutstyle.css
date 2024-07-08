@@ -70,12 +70,38 @@ footer a {
     color: #ffffff;
 }
 
+/*small icon settings*/
+.icon {
+    width: 16px;
+    height: 16px;
+}
+
+/*big icon settings*/
+.iconbig {
+    position: absolute;
+    width: 0px;
+    -webkit-transition:width 0.3s linear 0s;
+    transition:width 0.3s linear 0s;
+    z-index:10;
+    transform: translateY(-20px);
+}
+
+/*display big icon on hover*/
+.icon:hover + .iconbig{
+    width: 20px;
+}
+
 @media only screen and (max-width: 640px) {
     h1 { color: #516769; font-size: 22pt; font-family: Alike;}
     h2 { color: #FFA39E; font-size: 20pt; margin-top: 10px; margin-bottom: 3px; font-family: Montserrat;}
     h3 { color: #516769; font-size: 14pt; font-family: Montserrat;}
     p { color: #516769; font-size: 12pt; font-family: Alike;}
     blockquote { color: #516769; font-size: 10pt; font-family: Alike;}
+
+    .eb {
+        height: 50%;
+        width: 100%;
+    }
 }
 
 /*set page print settings*/
