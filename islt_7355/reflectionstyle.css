@@ -24,24 +24,30 @@ body{
     margin: 0;
 }
 
-/*Outer box for sections 1 & 3of Reflection page*/
+/*Outer box for sections 1 & 3 of Reflection page*/
 .a{
     grid-column: col 1 / span 4;
 	grid-row: row 1;
 	display: grid;
     grid-gap: 10px;
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
 /*Left inner box for sections 1 & 3 of Reflection page*/
-.b{
+.ba{
     grid-column: 1;
     grid-row: 1;
+}
+ /*Right inner box 2 for section 1 & 3 of Project page*/
+.bb{
+    grid-column: 2;
+    grid-row: 1;
+    
 }
 
 /*Right inner box for sections 1 & 3 of Reflection page*/
 .c{
-    grid-column: 2;
+    grid-column: 3;
     grid-row: 1;
 }
 
@@ -139,5 +145,33 @@ footer a {
     .g{
         grid-column: 2;
         grid-row:2;
+    }
+
+    /*Outer box for sections 1 & 3 of Reflection page*/
+    .a{
+        grid-column: col 1 / span 4;
+	    grid-row: row 1 / span 2;
+	    display: grid;
+        grid-gap: 10px;
+	    grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr
+    }
+
+    /*Left inner box for sections 1 & 3 of Reflection page*/
+    .ba{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    /*Right inner box 2 for section 1 & 3 of Project page*/
+    .bb{
+        grid-column: 1;
+        grid-row: 2;
+    
+    }
+
+    /*Right inner box for sections 1 & 3 of Reflection page*/
+    .c{
+        grid-column: 2;
+        grid-row: 1 / span 2;
     }
 }

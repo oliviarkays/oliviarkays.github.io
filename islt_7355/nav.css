@@ -115,6 +115,7 @@ nav ul li ul li a:hover {
 			}
 	nav:hover ul {
 		display: block;
+        z-index: 9999;
 	}
     	nav:hover #mobileHide {
 		display: none;
