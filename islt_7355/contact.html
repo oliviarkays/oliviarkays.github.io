@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+               <meta charset="utf-8">
+               <title>Contact</title>
+               <link rel="stylesheet" href="contactstyle.css">
+               <link rel="stylesheet" href="nav.css">
+</head>
+
+<header>
+    <nav>
+        <p>Contact</p>
+        <label id="hamburger">&#9776;</label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href=#project.html>Projects</a>
+                <ul id="mobileHide">
+                    <li><a href="project.html">Project 1</a></li>
+                    <li><a href="project2.html">Project 2</a></li>
+                    <li><a href="project3.html">Project 3</a></li>
+                    <li><a href="project4.html">Project 4</a></li>
+                </ul>
+            <li><a href="reflection.html">Personal Reflection</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+       </nav>
+</header>
+
+<body>
+    <main>
+    <div class="box a">
+        <div class="box b">
+            <img src="ImgWithGraphics.png" alt="Profile image with organic shapes" style="width: 75%; position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <!--Profile image with graphics centered using inline CSS-->
+        </div>
+        <div class="box c">
+            <h2 style="padding-top:10px;">Olivia Kays</h2>
+            <h3 style="margin: 5px">Academic Library Fellow</h3>
+            <br/>
+            <img src="icons8-email-50.png" alt="Email" style="width:16px;">
+            orkn3b@umsystem.edu
+            <br/>
+            <br/>
+            <img src="icons8-phone-50.png" alt="Phone" style="width:16px;"> 
+            816-123-4567
+
+        </div>
+    </div>
+
+    <h3 style="text-align: center;">Contact</h3>
+    <div class="box d">
+        <form action="mailto:orkn3b@umsystem.edu?Subject=Portfolio%20Site%20Message" method="post" enctype="text/plain">
+            <div>
+                <label for="firstname"><strong>First Name</strong></label>
+                <br/>
+                <input name="firstname" id="firstname" required autofocus>
+            </div>
+            <div>
+                <label for="lastname"><strong>Last Name</strong></label>
+                <br/>
+                <input name="lastname" id="lastname" required>
+            </div>
+
+            <div>
+                <label for="email"><strong>Email</strong></label>
+                <br/>
+                <input type="email" name="email" id="email" required>
+            </div>
+            
+            <div>
+                <label for="message" required><strong>Message</strong></label>
+                <br/>
+                <textarea name="message" id="message" required>Enter your message here</textarea>
+            </div>
+            <div class="button">
+            <button type="reset"><strong>Clear Form</strong></button>
+            <button type="submit"><strong>Submit</strong></button>
+            </div>
+        </form>
+    </div>
+
+   </main>
+
+   <footer>
+    <p>Olivia Kays | 
+        <img class="icon" src="icons8-email-16.png" alt="Email">
+        <img class="iconbig" src="icons8-email-50.png" alt="Email"> 
+        orkn3b@umsystem.edu | 
+        <img class="icon" src="icons8-phone-16.png" alt="Phone">
+        <img class="iconbig" src="icons8-phone-50.png" alt="Phone"> 
+        816-123-4567 | &copy; 2024 Olivia Kays. All rights reserved.</p>        
+        <p><a target="_blank" href="https://icons8.com/icon/12580/email">Email</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> |
+        <a target="_blank" href="https://icons8.com/icon/9659/phone">Phone</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+        </p>        
+   </footer>
+    
+</body>
+</html>

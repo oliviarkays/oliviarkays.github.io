@@ -1,0 +1,153 @@
+@font-face { 
+
+    font-family: Alike; /*this is where we give our font a name so we can use it!*/
+    
+    src: url("Alike/Alike-Regular.ttf");
+    
+}
+
+@font-face { 
+
+     font-family: Montserrat; /*this is where we give our font a name so we can use it!*/
+        
+     src: url("Montserrat/Montserrat-VariableFont_wght.ttf");
+        
+}
+
+
+body {
+    margin: 0;
+}
+
+h1 { color: #516769; font-family: Alike;}
+h2 { color: #FFA39E; font-size: 32pt; margin-top: 10px; margin-bottom: 3px; font-family: Montserrat;}
+h3 { color: #516769; font-family: Montserrat;}
+p { color: #516769;font-family: Alike;}
+
+/*Outer box for section 1 of contact page*/
+.a{
+    grid-column: col 1 / span 4;
+	grid-row: row 1;
+	display: grid;
+    grid-gap: 10px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+/*Left inner box for section 1 of Contact page*/
+.b{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/*Right inner box for section 1 of Contact page*/
+.c{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+
+/*Section 2 of Contact page*/
+.d{
+    padding: 10px;
+    justify-content: center;
+}
+
+.d form {
+    width: 600px;
+    border: 1px solid #516769;
+    border-radius: 4px;
+    background-color: #BFD5D7;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.d form div {
+    padding: 5px;
+}
+
+.d form div input {
+    border: 1px solid #516769;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.d form textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+    border-radius: 4px;
+}
+
+.button {
+    text-align: center;
+}
+
+.d form button{
+    background-color: #FFE09E;
+    color: #000000;
+    border-color: #516769;
+    border-radius: 4px;
+    text-align: center;
+}
+
+footer {
+    background-image: url(FooterBG.png);
+    margin-bottom: 0;
+}
+
+footer p {
+    color: #ffffff;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+/*small icon settings*/
+.icon {
+    width: 16px;
+    height: 16px;
+}
+
+/*big icon settings*/
+.iconbig {
+    position: absolute;
+    width: 0px;
+    -webkit-transition:width 0.3s linear 0s;
+    transition:width 0.3s linear 0s;
+    z-index:10;
+    transform: translateY(-20px);
+}
+
+/*display big icon on hover*/
+.icon:hover + .iconbig{
+    width: 20px;
+}
+
+@media only screen and (max-width: 640px) {
+    h1 { color: #516769; font-size: 22pt; font-family: Alike;}
+    h2 { color: #FFA39E; font-size: 20pt; margin-top: 10px; margin-bottom: 3px; font-family: Montserrat;}
+    h3 { color: #516769; font-size: 14pt; font-family: Montserrat;}
+    p { color: #516769; font-size: 12pt; font-family: Alike;}
+    blockquote { color: #516769; font-size: 10pt; font-family: Alike;}
+
+    /*Left inner box for section 1 of Contact page*/
+    .b{
+        grid-column: 1 / span 2;
+        grid-row: 1;
+    }
+
+    /*Right inner box for section 1 of Contact page*/
+    .c{
+        grid-column: 3 / span 4;
+        grid-row: 1;
+    }
+
+    /*Resize form to fit width of screen*/
+    .d form {
+        width: 90%;
+    }
+
+
+}
