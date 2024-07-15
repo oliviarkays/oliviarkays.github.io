@@ -33,6 +33,7 @@ blockquote { color: #516769; font-family: Alike;}
     grid-gap: 10px;
 	grid-template-columns: 2fr 1fr;
     grid-template-rows: 3fr 1fr;
+    padding: 10px;
 }
 
 /*Left inner box for section 1 of About page*/
@@ -56,8 +57,7 @@ blockquote { color: #516769; font-family: Alike;}
 .d{
     background-color: #BFD5D7;
     color: #516769;
-    padding-top: 5px;
-    padding-bottom: 10px;
+    padding: 10px;
 }
 
 footer {
