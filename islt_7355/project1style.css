@@ -21,6 +21,13 @@ p { color: #516769;font-family: Alike;}
 ul {font-size: 12pt;}
 blockquote { color: #516769; font-family: Alike;}
 
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
 body {
     margin: 0;
 }
@@ -62,7 +69,10 @@ body {
 
 footer {
     background-image: url(FooterBG.png);
-    margin-bottom: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
 }
 
 footer p {

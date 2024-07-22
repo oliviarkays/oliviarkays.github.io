@@ -14,6 +14,12 @@
         
 }
 
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
 
 body {
     margin: 0;
@@ -60,9 +66,17 @@ blockquote { color: #516769; font-family: Alike;}
     padding: 10px;
 }
 
+/*Section 3 of About page*/
+.e{
+    padding: 10px;
+}
+
 footer {
     background-image: url(FooterBG.png);
-    margin-bottom: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
 }
 
 footer p {

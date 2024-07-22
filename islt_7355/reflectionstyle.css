@@ -20,6 +20,13 @@ h2 { color: #FFA39E; font-size: 32pt; margin-top: 10px; margin-bottom: 3px; font
 h3 { color: #516769; font-family: Montserrat;}
 p { color: #516769;font-family: Alike;}
 
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
 body{
     margin: 0;
 }
@@ -82,7 +89,10 @@ body{
 
 footer {
     background-image: url(FooterBG.png);
-    margin-bottom: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
 }
 
 footer p {
